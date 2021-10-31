@@ -8,14 +8,14 @@ with the following characteristics:
 
 This function assumes it is running on Linux and connects to [Azurite]() storage emulator, using the following connection string:
 
-```
-        "AzureWebJobsStorage": "AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://azurite:10000/devstoreaccount1;QueueEndpoint=http://azurite:10001/devstoreaccount1;TableEndpoint=http://azurite:10002/devstoreaccount1;",
+```json
+"AzureWebJobsStorage": "AccountName=devstoreaccount1;AccountKey=Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==;DefaultEndpointsProtocol=http;BlobEndpoint=http://azurite:10000/devstoreaccount1;QueueEndpoint=http://azurite:10001/devstoreaccount1;TableEndpoint=http://azurite:10002/devstoreaccount1;",
 ```
 
 If you are running on Windows, use the more traditional connection string instead as follows:
 
-```
-	"AzureWebJobsStorage": "UseDevelopmentStorage=true;"
+```json
+"AzureWebJobsStorage": "UseDevelopmentStorage=true;"
 ```
 
 ## How to use
@@ -24,13 +24,13 @@ If you are running on Windows, use the more traditional connection string instea
 
 This project template should be available as a package NuGet. First, install the template using the following command:
 
-```
+```pwsh
 dotnet new -i <NUGET_PACKAGE_ID>
 ```
 
 If you want install the latest version, clone this source code and create the NuGet package yourselves:
 
-```
+```pwsh
 dotnet pack
 dotnet new -i bin\Debug\Springcomp.Templates.1.0.0.nupkg
 ```
@@ -39,6 +39,6 @@ dotnet new -i bin\Debug\Springcomp.Templates.1.0.0.nupkg
 
 Create a new Azure Function using the following command:
 
-```
+```pwsh
 dotnet new func-http-refit -o <project-name>
 ```
