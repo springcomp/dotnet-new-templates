@@ -1,0 +1,19 @@
+{
+  "$schema": "http://json.schemastore.org/vs-2017.3.host",
+  "name": {
+    "text": "Azure Function/Trigger/Http/Refit",
+    "package": "{7ef97890-b613-42f5-ac5e-0214e5b21fbd}",
+    "id": "1100"
+  },
+  "description": {
+    "text": "Azure Function templates for dotnet new",
+    "package": "{7ef97890-b613-42f5-ac5e-0214e5b21fbd}",
+    "id": "1101"
+  },
+  "order": 300,
+  "icon": "icon.png",
+  "uiFilters": [
+    "functions"
+  ],
+  "excludeLaunchSettings": false
+}
