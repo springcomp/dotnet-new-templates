@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageType>Template</PackageType>
-    <PackageVersion>1.0</PackageVersion>
+    <PackageVersion>1.0.8004</PackageVersion>
     <PackageId>springcomp.dotnet-new.templates</PackageId>
     <Title>Azure Function templates for dotnet new</Title>
     <Authors>Springcomp</Authors>
