@@ -28,7 +28,7 @@ namespace FunctionApp
         [FunctionName("Functions")]
         public async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
-            [Blob("container", FileAccess.Read, Connection = "AzureWebJobsStorage")] CloudBlobContainer container,
+            //[Blob("container", FileAccess.Read, Connection = "AzureWebJobsStorage")] CloudBlobContainer container,
             ILogger log,
             CancellationToken cancellationToken)
         {
@@ -40,10 +40,11 @@ namespace FunctionApp
             // from request headers
 
             var trackingId = Guid.NewGuid().ToString("d");
-            var blob = container.GetBlockBlobReference(trackingId);
-            using (var stream = await blob.OpenWriteAsync())
-            using (var writer = new StreamWriter(stream))
-                writer.WriteLine("Hello, world!");
+
+            //var blob = container.GetBlockBlobReference(trackingId);
+            //using (var stream = await blob.OpenWriteAsync())
+            //using (var writer = new StreamWriter(stream))
+            //    writer.WriteLine("Hello, world!");
 
             // transmit correlation/tracking identifier
 

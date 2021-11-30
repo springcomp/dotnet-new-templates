@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Maxime Labelle",
+  "classifications": [ "Azure Function", "Trigger", "Http", "Refit", "netcoreapp3.1" ],
+  "identity": "springcomp:dotnet-new-templates:function-apps:htt-refit:netcoreapp3.1",
+  "name": "Azure Function Refit HttpClient Trigger (.net core 3.1)",
+  "shortName": "func-http-refit-netcoreapp3.1",
+  "sourceName": "FunctionApp",
+  "defaultName": "FunctionApp",
+  "preferNameDirectory": true,
+  "tags": {
+    "type": "project",
+    "language": "C#"
+  }
+}

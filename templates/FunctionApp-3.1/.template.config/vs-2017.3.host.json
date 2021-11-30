@@ -1,7 +1,7 @@
 {
   "$schema": "http://json.schemastore.org/vs-2017.3.host",
   "name": {
-    "text": "Azure Function/Trigger/Http/Refit",
+    "text": "Azure Function/Trigger/Http/Refit-netcoreapp3.1",
     "package": "{7ef97890-b613-42f5-ac5e-0214e5b21fbd}",
     "id": "1100"
   },
